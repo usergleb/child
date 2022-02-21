@@ -1054,12 +1054,11 @@ body {
   height: 220%;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #36be31;
 }
 
 .price-btn span {
   position: relative;
-  color: #000;
   z-index: 2;
 }
 
@@ -1493,9 +1492,6 @@ body {
   position: relative;
   z-index: 100;
   color: white;
-}
-.price-section .course__btn.btn.price-btn span:hover {
-  color: black;
 }
 .price-section .course__btn.btn.price-btn:hover {
   color: black;

@@ -233,6 +233,7 @@
     box-shadow: 4px 10px 5px rgb(96,179,255);
     transition: 0.3s all;
 }
+
 .advantages-item:active{
     background-color: rgb(144, 201, 255);
     border-radius: 10px;
@@ -701,13 +702,11 @@
     height: 220%;
     top: 0;
     left: 0;
-    background-color: white;
-    
+    background-color: rgb(54, 190, 49);
 }
 .price-btn{
     span{
         position: relative;
-        color: #000;
         z-index:2;
     }
 }
@@ -1050,9 +1049,6 @@
             position: relative;
             z-index:100;
             color: white;
-        }
-        span:hover{
-            color: black;
         }
     }
     .course__btn.btn.price-btn:hover{
