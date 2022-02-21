@@ -461,6 +461,17 @@ body {
   transition: 0.3s all;
 }
 
+.advantages-item:active {
+  background-color: #90c9ff;
+  border-radius: 10px;
+  position: relative;
+  top: -10px;
+  -webkit-box-shadow: 4px 10px 5px #60b3ff;
+          box-shadow: 4px 10px 5px #60b3ff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
 .item__logo {
   margin-bottom: 10px;
 }

@@ -233,6 +233,14 @@
     box-shadow: 4px 10px 5px rgb(96,179,255);
     transition: 0.3s all;
 }
+.advantages-item:active{
+    background-color: rgb(144, 201, 255);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    box-shadow: 4px 10px 5px rgb(96,179,255);
+    transition: 0.3s all;
+}
 
 
 .item {
