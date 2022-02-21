@@ -1470,7 +1470,15 @@ body {
   }
 }
 .price-section .course__btn.btn.price-btn span {
+  position: relative;
+  z-index: 100;
   color: white;
+}
+.price-section .course__btn.btn.price-btn span:hover {
+  color: black;
+}
+.price-section .course__btn.btn.price-btn:hover {
+  color: black;
 }
 
 @media (max-width: 767px) {
@@ -1483,6 +1491,14 @@ body {
     color: white;
   }
 }
+.none {
+  fill: green;
+}
+
+.currentColor {
+  fill: green;
+}
+
 .footer {
   padding: 30px;
   background-color: #60b3ff;

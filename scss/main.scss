@@ -1026,9 +1026,19 @@
 .price-section{
     .course__btn.btn.price-btn{
         span{
+            position: relative;
+            z-index:100;
             color: white;
         }
+        span:hover{
+            color: black;
+        }
     }
+    .course__btn.btn.price-btn:hover{
+        color:black;
+        
+    }
+
 }
 @media (max-width:767px){
     .advantages{
@@ -1042,4 +1052,10 @@
             }
         }
     }
+}
+.none{
+    fill: green;
+}
+.currentColor{
+    fill: green;
 }
