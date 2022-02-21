@@ -1,0 +1,126 @@
+// ------------- Connected reset-style file   ------------- // 
+@import "reset_styles";
+
+
+
+
+// -------------- Настройка основного шрифта и размера ---------------- //
+
+
+
+
+//==================== Add Slider Plugg ==============================//
+@import url(/scss/slider/slider.scss);
+
+
+
+
+// ---------------  Design used colors ------------------ //
+$col1: rgb(48, 31, 31);
+$col2: rgb(255, 0, 0);
+$col3: rgb(31, 31, 48);
+
+
+
+// ---------  Подключение Шрифтов ------- // 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+
+@font-face {
+    font-family: 'Graphik-bold';
+    src: url('/fonts/GraphikLCG-Bold.eot');
+    src: local('Graphik Black'), local('Graphik-Black'),
+        url('/fonts/GraphikLCG-Bold.eot') format('embedded-opentype'),
+        url('/fonts/GraphikLCG-Bold.woff2') format('woff2'),
+        url('/fonts/GraphikLCG-Bold.woff') format('woff'),
+        url('/fonts/GraphikLCG-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik-regular';
+    src: url('/fonts/GraphikLCG-Regular.eot');
+    src: local('Graphik Regular'), local('Graphik-Regular'),
+        url('/fonts/GraphikLCG-Regular.eot') format('embedded-opentype'),
+        url('/fonts/GraphikLCG-Regular.woff2') format('woff2'),
+        url('/fonts/GraphikLCG-Regular.woff') format('woff'),
+        url('/fonts/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+// ---------- Added modules-files ----------------// 
+
+
+body{
+    font-family: 'Graphik-regular';
+    height: 100%;
+}
+.wrapper{
+    min-height: 100vh;
+}
+
+.fullscreen{
+    min-height:100vh;
+}
+
+
+@import "header";
+@import "main";
+@import "footer";
+
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+
